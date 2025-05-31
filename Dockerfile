@@ -14,7 +14,7 @@ RUN pnpm install
 
 COPY --link . .
 
-RUN pnpm run build
+RUN npm run build
 
 #run
 FROM base
