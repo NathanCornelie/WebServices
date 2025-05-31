@@ -10,7 +10,7 @@ WORKDIR /app
 FROM base as build
 
 COPY --link package.json ./
-RUN pnpm install
+RUN npm install
 
 COPY --link . .
 
