@@ -1,29 +1,29 @@
-ARG NODE_VERSION=22.8.0
+# Stage 1: Build the Vite app
+FROM node:18 AS builder
 
-FROM node:${NODE_VERSION}-slim as base
-
-ARG PORT=3003
-
+# Set working directory
 WORKDIR /app
 
-# Build
-FROM base as build
+# Copy project files
+COPY package*.json ./
+COPY . .
 
-COPY --link package.json ./
+# Install dependencies and build
 RUN npm install
-
-COPY --link . .
-
 RUN npm run build
 
-#run
-FROM base
+# Stage 2: Serve the app with a lightweight web server (nginx)
+FROM nginx:alpine
 
-ENV PORT=$PORT
-ENV NODE_ENV=production
+# Remove default nginx static assets
+RUN rm -rf /usr/share/nginx/html/*
 
-COPY --from=build /app/.output /app/.output
-# Optional, only needed if you rely on unbundled dependencies
-# COPY --from=build /src/node_modules /src/node_modules
+# Copy built assets from the builder stage
+COPY --from=builder /app/dist /usr/share/nginx/html
 
-CMD [ "node", ".output/server/index.mjs" ]
+# Copy custom nginx config (optional)
+# COPY nginx.conf /etc/nginx/conf.d/default.conf
+
+# Expose port and start nginx
+EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]

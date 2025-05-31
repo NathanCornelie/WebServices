@@ -20,6 +20,6 @@ jobs:
           docker build -t vitrine .
           docker stop vitrine || true
           docker rm vitrine || true
-          docker run -d --name vitrine -p 3005:3005 vitrine
+          docker run -d --name vitrine -p 3005:80 vitrine
 
       
