@@ -19,7 +19,7 @@ export default function Home() {
           <Image src="/team.svg" alt="Team" width={600} height={500} unoptimized />
         </div>
 
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <p className="md:w-1/2 text-xl text-muted-foreground max-w-2xl mx-auto">
             Nous créons des sites web et des solutions sur mesure pour faire
             gagner du temps aux petites entreprises. Sites vitrines,
             applications métiers, automatisation des processus ou monitoring :
