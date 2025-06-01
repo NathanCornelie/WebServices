@@ -25,7 +25,7 @@ export default function Website() {
       <section className="flex flex-col md:flex-row items-center gap-10">
         <div className="md:w-1/2">
           <Image
-            src="/vitrine/vitrine.svg"
+            src=".svg"
             alt="Site vitrine"
             width={400}
             height={400}
@@ -52,7 +52,7 @@ export default function Website() {
       <section className="flex flex-col md:flex-row-reverse items-center gap-10">
         <div className="md:w-1/2">
           <Image
-            src="/vitrine/app.svg"
+            src="/app.svg"
             alt="Application web sur mesure"
             width={400}
             height={400}

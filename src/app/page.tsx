@@ -16,7 +16,7 @@ export default function Home() {
       </div>
       <div className="flex md:flex-row flex-col gap-2.5 mt-10 mb-30 items-center">
         <div className="md:w-1/2 flex justify-center">
-          <Image src="/vitrine/team.svg" alt="Team" width={600} height={500} unoptimized />
+          <Image src="/team.svg" alt="Team" width={600} height={500} unoptimized />
         </div>
 
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
@@ -36,7 +36,7 @@ export default function Home() {
           <Link href="/website">
             <Card>
               <CardContent>
-                <Image className="service_images" src="/vitrine/webbuilder.svg" alt="Web Builder" width={200} height={200} />
+                <Image className="service_images" src="/webbuilder.svg" alt="Web Builder" width={200} height={200} />
               </CardContent>
               <CardFooter>
                 <p>Site web sur mesure</p>
@@ -46,7 +46,7 @@ export default function Home() {
           <Link href="/automatisation">
             <Card>
               <CardContent>
-                <Image className="service_images" src="/vitrine/pipeline.svg" alt="Pipeline"  width={200} height={200}/>
+                <Image className="service_images" src="/pipeline.svg" alt="Pipeline"  width={200} height={200}/>
               </CardContent>
               <CardFooter>
                 <p>Automatisation</p>
@@ -55,7 +55,7 @@ export default function Home() {
           </Link>
           <Card>
             <CardContent>
-              <Image className="service_images filter grayscale" src="/vitrine/monitoring.svg" alt="Monitoring" width={200} height={200} />
+              <Image className="service_images filter grayscale" src="/monitoring.svg" alt="Monitoring" width={200} height={200} />
             
             </CardContent>
             <CardFooter>

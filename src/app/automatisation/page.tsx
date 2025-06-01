@@ -31,7 +31,7 @@ export default function Pipeline() {
         <section className="flex flex-col md:flex-row items-center gap-10">
           <div className="md:w-1/2">
             <Image
-              src="/vitrine/automation.svg"
+              src="/automation.svg"
               alt="Automatisation et pipelines"
               width={400}
               height={400}
