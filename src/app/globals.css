@@ -3,7 +3,7 @@
 
 @import "tailwindcss";
 @import "tw-animate-css";
-root {
+body {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
@@ -17,12 +17,9 @@ root {
 h1 {font-family: "Istok Web", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 92px;
-  line-height: 80px;
 }
 h2 {
   font-family: "Istok Web", sans-serif;
-  font-size: 2.8rem;
   font-weight: 600;
   
 }
@@ -31,7 +28,6 @@ h3 {
   font-family: "DM Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
-  @apply text-5xl;
   color: var(--color-emerald-400);
 }
 @custom-variant dark (&:is(.dark *));
@@ -151,6 +147,6 @@ h3 {
   }
   body {
     @apply bg-background text-foreground;
-    padding: 2rem;
+    
   }
 }
