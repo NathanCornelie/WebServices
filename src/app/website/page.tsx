@@ -25,7 +25,7 @@ export default function Website() {
       <section className="flex flex-col md:flex-row items-center gap-10">
         <div className="md:w-1/2">
           <Image
-            src=".svg"
+            src="/vitrine.svg"
             alt="Site vitrine"
             width={400}
             height={400}

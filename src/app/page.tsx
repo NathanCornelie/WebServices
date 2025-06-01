@@ -53,7 +53,7 @@ export default function Home() {
               </CardFooter>
             </Card>
           </Link>
-          <Card>
+          <Card className="py-3">
             <CardContent>
               <Image className="service_images filter grayscale" src="/monitoring.svg" alt="Monitoring" width={200} height={200} />
             
